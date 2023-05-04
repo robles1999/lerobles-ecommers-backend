@@ -1,6 +1,4 @@
-# Project Name
-
-E-commerce Back-end
+# E-commerce Back-end
 
 # Descriptions
 
