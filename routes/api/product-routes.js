@@ -71,7 +71,18 @@ router.post("/", (req, res) => {
 
 // update product
 router.put("/:id", (req, res) => {
+  /* req.body should look like this...
+    {
+      "product_name": "Basketball",
+      "price": "150.00",
+      "stock": "2",
+      "tagIds": [1, 3],
+      "category_id": 2
+    }
+  */
   // update product data
+  // code was provided in the challenge but is not working
+  // the old tags aren't being removed
   Product.update(req.body, {
     where: {
       id: req.params.id,
@@ -81,7 +92,8 @@ router.put("/:id", (req, res) => {
       // find all associated tags from ProductTag
       return ProductTag.findAll({ where: { product_id: req.params.id } });
     })
-    .then((productTags) => {
+    .then((productTags) =>
+    {
       // get list of current tag_ids
       const productTagIds = productTags.map(({ tag_id }) => tag_id);
       // create filtered list of new tag_ids

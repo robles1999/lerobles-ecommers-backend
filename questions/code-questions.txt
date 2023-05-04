@@ -1,5 +1,0 @@
-Questions:
-
-1. When the server.js was run, all the tables were created in the database. How did this happen?
-
-2. 
