@@ -1,6 +1,6 @@
 # E-commerce Back-end
 
-# Descriptions
+# Description
 
 The application keeps track of an online store inventory by the use of MySQL database containing four tables; category, product, product_tag and tag.
 
