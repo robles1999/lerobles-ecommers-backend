@@ -25,3 +25,10 @@ The application keeps track of an online store inventory by the use of MySQL dat
 
 # Video Walkthrough
 [Click to be taken to the video.](https://drive.google.com/file/d/133LKi2uALfmJzQgULUQIPdmGwOVXIUpD/view)
+
+## Technologies
+- JavaScript
+- Node.js
+- Express
+- MySQL
+- Sequelize
